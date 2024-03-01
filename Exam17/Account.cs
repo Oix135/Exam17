@@ -10,7 +10,6 @@
         {
             if (Type == AccountType.Обычный)
             {
-                // расчет процентной ставки обычного аккаунта по правилам банка
                 Interest = Math.Round(Balance * 0.4, 2);
                 if (Balance < 1000)
                     Interest -= Math.Round(Balance * 0.2, 2);
@@ -24,7 +23,6 @@
             }
             else if (Type == AccountType.Зарплатный)
             {
-                // расчет процентной ставк зарплатного аккаунта по правилам банка
                 Interest = Math.Round(Balance * 0.5, 2);
             }
         }

@@ -11,6 +11,8 @@ namespace Exam17
 
         // процентная ставка
         public double Interest { get; set; }
+
+        // расчет процентной ставки обычного аккаунта по правилам банка
         void CalculateInterest();
     }
 }
